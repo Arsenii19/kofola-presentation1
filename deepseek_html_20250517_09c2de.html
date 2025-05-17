@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História Kofoly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <style>
+        .slides section { text-align: left; }
+        .slides section h1, .slides section h2 { color: #e74c3c; }
+        .kofola-logo { width: 200px; }
+        .code-sample { font-size: 0.8em !important; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Titulný -->
+            <section>
+                <h1>História Kofoly</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Kofola_logo.svg/1200px-Kofola_logo.svg.png" class="kofola-logo">
+                <p>Kultový nápoj Česka a Slovenska</p>
+            </section>
+
+            <!-- Slide 2: Vznik -->
+            <section>
+                <h2>Vznik Kofoly</h2>
+                <ul>
+                    <li>Vytvorená v roku <strong>1959</strong> v Česko-Slovensku.</li>
+                    <li>Pôvodne liek na bolesť hlavy.</li>
+                    <li>Obsahovala výtažky z byĺn a kofeín.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 3: Príklad kódu (ako "recept") -->
+            <section>
+                <h2>Pseudokód "receptúry"</h2>
+                <pre><code class="hljs javascript code-sample">
+function vytvorKofolu() {
+    const zaklad = ["voda", "cukor", "ovocné výtažky"];
+    const byliny = ["kofeín", "vyššie kyseliny"];
+    const limonada = mix(zaklad + byliny);
+    return limonada;
+}
+                </code></pre>
+                <p>Samozrejme, skutočný recept je tajný! 🔒</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [RevealHighlight]
+        });
+    </script>
+</body>
+</html>
